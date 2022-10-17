@@ -3,12 +3,14 @@
 либо равна 3 символа.*/
 
 Console.WriteLine("Введите текст через пробел: ");
+
 string text = Console.ReadLine()!;
 string[] textArray = text.Split(' ');
 string[] finishText = new string[textArray.Length];
 
 FindStringLessThree(textArray);
 PrintArray(finishText);
+
 
 void FindStringLessThree (string[] textArray)
 {
